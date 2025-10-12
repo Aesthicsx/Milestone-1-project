@@ -1,0 +1,118 @@
+body {
+    font-family: "segoe UI", Roboto, Arial, sans-serif;
+    background: #fbfbfd;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #3d405b, #2b2f5a);
+    color: #fff;
+    padding: 18px 12px;
+    text-align: center;
+}
+
+#site-title {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+}
+
+.tangline {
+    margin: 6px 0 12px;
+    opacity: 0.95;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18PX;
+    padding: 0;
+    margin: 12px 0 0; 
+}
+
+nav ul.menu li {margin: 0; }
+
+nav ul.menu a {
+    colot: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: backgrounf-color 160ms, color 160ms;
+}
+
+nav ul.menu a:hover,
+nav ul.menu a:focus {
+    background-color: rgba(255, 209, 102, 0.12);
+    color: #ffd166;
+    outline: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 12px;
+    align-items: start;
+}
+
+.sidebar {
+    background: #fff;
+    border: 1px solid #e6e6ee;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(30,30,60,0.03);
+}
+.content {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #f0f0f6;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+th, td {
+    border: 1px solid #e6e6ee;
+    padding: 10px;
+    text-align: left;
+}
+
+dl {margin: 0;}
+dt {font-weight: 700; margin-top: 12px;}
+dd {margin-left: 8px; margin-bottom: 8px;}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    background: linear-gradient(90deg, #3d405b, #2b2f5a);
+    margin-top: 30px;
+}
+
+.intro {max-width: 800px; margin-bottom: 14px;}
+
+#highlight {color: e07a5f; front-weight: 700;}
+
+@media (max-width: 800px) {
+    .container {grid-template-columns: 1fr; padding: 0 10px;}
+    nav ul.menu {flex-wrap: wrap; gap: 10px;}
+}
