@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef RPG - Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="site-title">Chef RPG Knowledge Quiz</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gamplay.html">Gamplay</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="quiz-container">
+        <form id="quizForm">
+            <h2>Test Your Knowledge of Chef RPG</h2>
+
+            <div class="question">
+                <label>1. Chef RPG is being developed by ______ Studios.</label><br>
+                <input type="text" id="q1" placeholder="Your answer here">
+            </div>
+
+            <div class="question">
+                <p>2. Which game engine powers Chef RPG?</p>
+                <label><input type="radio" name="q2" value="a"> Unity</label><br>
+                <label><input type="radio" name="q2" value="b"> Unreal Engine</label><br>
+                <label><input type="radio" name="q2" value="c"> Godot</label>
+            </div>
+
+            <div class="question">
+                <p>3. What genre best describes Chef RPG?</p>
+                <label><input type="radio" name="q3" value="a"> Action Shooter</label><br>
+                <label><input type="radio" name="q3" value="b"> Cozy Life Simulation</label><br>
+                <label><input type="radio" name="q3" value="c"> Puzzle Adventure</label>
+            </div>
+            
+            <div class="question">
+                <p>4. Chef RPG is available on which platform first?</p>
+                <label><input type="radio" name="q4" value="a"> Mobile</label><br>
+                <label><input type="radio" name="q4" value="b"> Steam (PC)</label><br>
+                <label><input type="radio" name="q4" value="c"> Playstation</label>
+            </div>
+            <div class="question">
+                <p>5. Which following features are part of Chef RPG? (Select all that apply)</p>
+                <label><input type="checkbox" name="q5" value="a"> Cooking System</label><br>
+                <label><input type="checkbox" name="q5" value="b"> Car Racing</label><br>
+                <label><input type="checkbox" name="q5" value="c"> Farming Mechanics</label><br>
+                <label><input type="checkbox" name="q5" value="d"> Social Relationships</label>
+            </div>
+            
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+         </form>
+
+            <div id="results"></div>
+         </main>
+    <footer>
+        <p>&copy; 2025 Monique Morris</p>
+    </footer>
+</body>
+</html>
