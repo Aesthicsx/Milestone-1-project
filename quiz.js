@@ -1,4 +1,4 @@
-document.getElementById('quiz-form').addEventListener('submit', function(event) {
+document.getElementById("quizForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
     let score = 0;
@@ -37,5 +37,6 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
 });
 
 document.getElementById("reset-btn").addEventListener("click", function() {
+    document.getElementById("quizForm").reset();
     document.getElementById("results").innerHTML = "";
 });
